@@ -1,0 +1,6 @@
+framework module Pods_pathidi {
+  umbrella header "Pods-pathidi-umbrella.h"
+
+  export *
+  module * { export * }
+}
