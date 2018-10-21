@@ -14,5 +14,7 @@ target 'pathidi' do
   pod 'PubNub', '~> 4.1'
   pod 'GoogleAPIClientForREST/YouTube'
   pod 'GoogleAPIClientForREST/Customsearch'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Alamofire', '~> 4.7'
 
 end

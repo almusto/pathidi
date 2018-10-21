@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A5F12BE93485D226C62ECC44 /* Pods_pathidi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775C68208A58D325A181B82E /* Pods_pathidi.framework */; };
+		AACB7F58217CFA56000133EE /* MenuLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F57217CFA56000133EE /* MenuLabel.swift */; };
+		AAE80B8C217CEF1F00144A7E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE80B8B217CEF1F00144A7E /* MenuView.swift */; };
+		AAE80B8E217CEF2D00144A7E /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE80B8D217CEF2D00144A7E /* MenuVC.swift */; };
+		AAE80B90217CEF7E00144A7E /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE80B8F217CEF7E00144A7E /* BaseVC.swift */; };
+		AAE80B92217CF22A00144A7E /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE80B91217CF22A00144A7E /* MenuTableViewCell.swift */; };
 		AAF5709F216A606F003379BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5709E216A606F003379BE /* AppDelegate.swift */; };
 		AAF570A1216A606F003379BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF570A0216A606F003379BE /* ViewController.swift */; };
 		AAF570A4216A606F003379BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF570A2216A606F003379BE /* Main.storyboard */; };
@@ -33,6 +38,11 @@
 		3C9B81DABEFC235B5EAA2B05 /* Pods-pathidi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathidi.release.xcconfig"; path = "Pods/Target Support Files/Pods-pathidi/Pods-pathidi.release.xcconfig"; sourceTree = "<group>"; };
 		515803BC5E4AD3C19A01053E /* Pods-pathidi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathidi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pathidi/Pods-pathidi.debug.xcconfig"; sourceTree = "<group>"; };
 		775C68208A58D325A181B82E /* Pods_pathidi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pathidi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AACB7F57217CFA56000133EE /* MenuLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLabel.swift; sourceTree = "<group>"; };
+		AAE80B8B217CEF1F00144A7E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		AAE80B8D217CEF2D00144A7E /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		AAE80B8F217CEF7E00144A7E /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		AAE80B91217CF22A00144A7E /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		AAF5709B216A606F003379BE /* pathidi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pathidi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF5709E216A606F003379BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAF570A0216A606F003379BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +152,9 @@
 		AAF570B1216A60A3003379BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AAE80B8B217CEF1F00144A7E /* MenuView.swift */,
+				AAE80B91217CF22A00144A7E /* MenuTableViewCell.swift */,
+				AACB7F57217CFA56000133EE /* MenuLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				AAF570CE217CE89C003379BE /* AppController.swift */,
+				AAE80B8D217CEF2D00144A7E /* MenuVC.swift */,
+				AAE80B8F217CEF7E00144A7E /* BaseVC.swift */,
 			);
 			path = Controlers;
 			sourceTree = "<group>";
@@ -236,15 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-pathidi-checkManifestLockResult.txt",
 			);
@@ -258,24 +269,24 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-pathidi/Pods-pathidi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/PubNub/PubNub.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PubNub.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -296,13 +307,18 @@
 				AAF570CD217CE53C003379BE /* Colors.swift in Sources */,
 				AAF570BA216A63F4003379BE /* Explorer.swift in Sources */,
 				AAF570CF217CE89C003379BE /* AppController.swift in Sources */,
+				AAE80B90217CEF7E00144A7E /* BaseVC.swift in Sources */,
 				AAF570C4216A6B88003379BE /* Event.swift in Sources */,
+				AAE80B8E217CEF2D00144A7E /* MenuVC.swift in Sources */,
 				AAF570C0216A67CD003379BE /* Career.swift in Sources */,
 				AAF570C6216A6D16003379BE /* EventFactory.swift in Sources */,
+				AAE80B8C217CEF1F00144A7E /* MenuView.swift in Sources */,
 				AAF570BC216A6747003379BE /* Path.swift in Sources */,
 				AAF570C2216A6A73003379BE /* PathFactory.swift in Sources */,
 				AAF570CA216A6D2B003379BE /* Tour.swift in Sources */,
 				AAF570A1216A606F003379BE /* ViewController.swift in Sources */,
+				AACB7F58217CFA56000133EE /* MenuLabel.swift in Sources */,
+				AAE80B92217CF22A00144A7E /* MenuTableViewCell.swift in Sources */,
 				AAF5709F216A606F003379BE /* AppDelegate.swift in Sources */,
 				AAF570B8216A63D5003379BE /* Guide.swift in Sources */,
 				AAF570B4216A63BB003379BE /* User.swift in Sources */,
